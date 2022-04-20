@@ -1,0 +1,407 @@
+.main {
+    width: 980px;
+    height: 455px;
+    margin-left: 220px;
+    margin-top: 10px;
+}
+
+.focus {
+    position: relative;
+    float: left;
+    width: 721px;
+    height: 455px;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+}
+
+.circle li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0 3px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.newsflash {
+    float: right;
+    width: 250px;
+    height: 455px;
+}
+
+.news {
+    height: 165px;
+    border: 1px solid #e4e4e4;
+}
+
+.news .news_hd {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 15px;
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.news .news_hd h5 {
+    float: left;
+    font-size: 14px;
+}
+
+.news .news_hd .more {
+    float: right;
+}
+
+.news .news_hd .more::after {
+    content: '\e920';
+    font-family: 'icomoon';
+}
+
+.news .news_bd {
+    padding: 5px 15px 0;
+}
+
+.news .news_bd ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 24px;
+    line-height: 24px;
+}
+
+.lifeservice {
+    overflow: hidden;
+    height: 209px;
+    border: 1px solid #e4e4e4;
+    border-top: 0;
+}
+
+.lifeservice ul {
+    width: 252px;
+}
+
+.lifeservice ul li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 71px;
+    border-right: 1px solid #e4e4e4;
+    border-bottom: 1px solid #e4e4e4;
+    text-align: center;
+}
+
+.lifeservice ul li i {
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    margin-top: 12px;
+}
+
+.res {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.ico_1 {
+    background: url(../images/icons.png) no-repeat -17px -12px;
+}
+
+.ico_2 {
+    background: url(../images/icons.png) no-repeat -80px -15px;
+}
+
+.ico_3 {
+    background: url(../images/icons.png) no-repeat -141px -13px;
+}
+
+.ico_4 {
+    background: url(../images/icons.png) no-repeat -206px -12px;
+}
+
+.ico_5 {
+    background: url(../images/icons.png) no-repeat -17px -85px;
+}
+
+.ico_6 {
+    background: url(../images/icons.png) no-repeat -80px -84px;
+}
+
+.ico_7 {
+    background: url(../images/icons.png) no-repeat -143px -84px;
+}
+
+.ico_8 {
+    background: url(../images/icons.png) no-repeat -207px -84px;
+}
+
+.ico_9 {
+    background: url(../images/icons.png) no-repeat -17px -156px;
+}
+
+.ico_10 {
+    background: url(../images/icons.png) no-repeat -79px -156px;
+}
+
+.ico_11 {
+    background: url(../images/icons.png) no-repeat -142px -153px;
+}
+
+.ico_12 {
+    background: url(../images/icons.png) no-repeat -206px -155px;
+}
+
+.bargain {
+    margin-top: 5px;
+}
+
+.recom {
+    height: 163px;
+    background-color: #ebebeb;
+    margin-top: 12px;
+}
+
+.recom_hd {
+    float: left;
+    height: 163px;
+    width: 205px;
+    background-color: #5c5251;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.recom_bd {
+    float: left;
+}
+
+.recom_bd ul li {
+    position: relative;
+    float: left;
+}
+
+.recom_bd ul li img {
+    width: 248px;
+    height: 163px;
+}
+
+.recom_bd ul li:nth-child(-n+3):after {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    content: '';
+    width: 1px;
+    height: 145px;
+    background-color: #ddd;
+}
+
+.guess {
+    height: 265px;
+    margin-top: 30px;
+}
+
+.guess_hd {
+    height: 30px;
+}
+
+.guess_hd h5 {
+    float: left;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.guess_hd a {
+    float: right;
+    font-size: 12px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+
+.guess_hd a::after {
+    content: '\ea2e';
+    font-family: 'icomoon';
+    margin-left: 10px;
+}
+
+.guess_bd {
+    height: 235px;
+}
+
+.guess_bd ul li {
+    float: left;
+    width: 200px;
+    height: 235px;
+    text-align: center;
+}
+
+.guess_pic {
+    height: 161px;
+    line-height: 161px;
+}
+
+.guess_bd ul li p {
+    font-size: 18px;
+    color: #df3033;
+    margin-top: 5px;
+}
+
+.box_hd {
+    height: 30px;
+    border-bottom: 2px solid #c81623;
+}
+
+.box_hd h3 {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+    font-weight: 400;
+}
+
+.tab_list ul {
+    float: right;
+}
+
+.tab_list ul li {
+    float: left;
+}
+
+.tab_list ul li a {
+    margin: 0 15px;
+}
+
+.box_bd {
+    height: 361px;
+}
+
+.tab_list_iteam>div {
+    float: left;
+    height: 361px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.col_210 {
+    width: 210px;
+    background-color: #f9f9f9;
+}
+
+.tab_list_iteam img {
+    padding-top: 20px;
+}
+
+.col_210 ul {
+    padding-left: 10px;
+}
+
+.col_210 ul li {
+    float: left;
+    text-align: center;
+    line-height: 33px;
+    width: 85px;
+    height: 34px;
+    border-bottom: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.col_329 {
+    width: 329px;
+}
+
+.col_329 img {
+    padding: 0;
+}
+
+.col_221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col_219 {
+    width: 219px;
+}
+
+.border-b {
+    display: block;
+    border-bottom: 1px solid #ccc;
+}
+
+.box_paizi {
+    margin-top: 20px;
+}
+
+.box_bd li {
+    overflow: hidden;
+}
+
+.box_bd img {
+    /*过渡写到本身上， 谁做动画，给谁加*/
+    transition: all .2s;
+}
+
+.box_bd img:hover {
+    margin-left: 8px;
+}
+
+.fixedtool {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -676px;
+    width: 66px;
+    background-color: #fff;
+    display: none;
+}
+
+.fixedtool li {
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.fixedtool .current {
+    background-color: #c81623;
+    color: #fff;
+}

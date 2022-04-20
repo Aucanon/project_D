@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fonts/iconfont.css">
+</head>
+
+<body>
+    <div class="setting">
+        <form action="">
+            <label for="">Difficulty</label>
+            <select name="" class="difficulty">
+            <option value="easy">easy</option>
+            <option value="medium">medium</option>
+            <option value="hard">hard</option>
+            </select>
+        </form>
+    </div>
+
+    <button class="setting-btn"><i class="iconfont icon-shezhi"></i></button>
+
+    <div class="container">
+        <h2 class="head">👩‍💻 Speed Typer 👩‍💻</h2>
+        <p class="timer-container">Time left: <span class="time">0s</span></p>
+        <p class="score-container">Score: <span class="score">0</span></p>
+        <!-- <p>Type the following</p> -->
+        <small>Type the following</small>
+        <h1 class="word">drag</h1>
+        <input type="text" placeholder="Type the word here... " class="text">
+        <div class="end-container">
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
