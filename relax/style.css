@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    background: url(img/bg.jpg) no-repeat;
+    overflow: hidden;
+}
+
+h1 {
+    margin: 25px 0;
+    color: #fff;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.gradient-circle {
+    position: absolute;
+    left: -10;
+    top: -10;
+    background: conic-gradient( #4ca493 40%, #fff 40%, #fff 60%, #336d62 60%);
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    z-index: -2;
+}
+
+.grow {
+    animation: grow 3s linear forwards;
+}
+
+.shrink {
+    animation: shrink 3s linear forwards;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#text {
+    color: #fff;
+}
+
+.point-container {
+    position: absolute;
+    top: -40px;
+    left: 140px;
+    width: 20px;
+    height: 190px;
+    animation: rotate 7.5s linear forwards infinite;
+    transform-origin: bottom center;
+}
+
+.pointer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes grow {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1.0);
+    }
+}

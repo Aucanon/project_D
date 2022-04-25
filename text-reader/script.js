@@ -112,6 +112,5 @@ function getVoices() {
 }
 
 voicesSelect.addEventListener('change', function(e) {
-        message.voice = voices.find(voices => voices.name === e.target.value)
-    })
-    // getVoices()
+    message.voice = voices.find(voices => voices.name === e.target.value)
+})
